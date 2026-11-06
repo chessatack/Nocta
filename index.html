@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Nocta – Schach spielen, lernen, analysieren</title>
+  <meta name="description" content="Nocta: Schachplattform mit 32 Bots, KI-Trainer mit Stimme, Puzzles, Analyse, Online-Partien und Turnieren – als installierbare App, auch offline." />
+  <meta name="theme-color" content="#0f0f13" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Nocta" />
+  <link rel="stylesheet" href="app.css?v=428c5acd4a" />
+  <style>
+    #splash{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:#0f0f13;z-index:999;transition:opacity .35s}
+    #splash img{width:96px;height:96px;animation:sp 1.4s ease-in-out infinite}
+    #splash span{font:600 22px system-ui,sans-serif;letter-spacing:.2em;color:#e0b456}
+    @keyframes sp{50%{transform:scale(.94);opacity:.8}}
+  </style>
+</head>
+<body>
+  <div id="splash" aria-hidden="true"><img src="icon.svg" alt="" /><span>NOCTA</span></div>
+  <div id="root"></div>
+  <noscript>Nocta benötigt JavaScript.</noscript>
+  <script src="app.js?v=428c5acd4a" defer></script>
+  <script src="splash.js?v=428c5acd4a" defer></script>
+</body>
+</html>
